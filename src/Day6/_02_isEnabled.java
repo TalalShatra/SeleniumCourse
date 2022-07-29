@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class _02_isDisabled {
+public class _02_isEnabled {
     public static void main(String[] args) throws InterruptedException {
 
 

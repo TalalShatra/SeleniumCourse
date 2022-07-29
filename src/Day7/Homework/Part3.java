@@ -47,7 +47,6 @@ public class Part3 {
 
         WebElement searchBoxSecond = driver.findElement(By.id("inputValEnter"));
         String actualResult = searchBoxSecond.getAttribute("value");
-
         System.out.println(actualResult);
 
         driver.quit();

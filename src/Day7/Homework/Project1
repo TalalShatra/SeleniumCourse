@@ -1,0 +1,44 @@
+Part - 1
+1) Navigate to http://demoqa.com/text-box
+2) Maximize the window
+3) Enter full name as "Automation"
+4) Enter Email as "Testing@gmail.com"
+5) Enter Current Address as "Testing Current Address"
+6) Enter Permanent Address as "Testing Permanent Address"
+7) Click on submit button
+8) Print Name in the text box
+9) Print Email in the text box
+10) Print Current Address in the text box
+11) Print Permanent Address in the text box
+
+Part - 2
+1) Navigate to https://demo.applitools.com/
+2) Maximize the window
+3) Enter the username as "ttechno@gmail.com"
+4) Enter the password as "techno123."
+5) Click on sign in button
+6) Get the header text in red color (starts with "Your nearest branch ...") and assign it to a String str
+7) Print the String str
+8) Print the URL
+
+PART - 3
+1) Navigate to https://www.snapdeal.com/
+2) Maximize the window
+3) Search for "teddy bear" and click on search button
+4) Get and print the following text -->> We've got .... results for 'teddy bear'
+5) Print the URL
+6) Click on logo snapdeal logo
+7) Print the URL
+8) Navigate back and check if the automatically written text in the search bar is "teddy bear"
+
+(Hint: You may use the "value" attribute of the input tag for the search bar)
+IMPORTANT NOTE:
+If your Chrome browser refuses to open the website due to security reason and shows the following error:
+Your connection is not private
+Attackers might be trying to steal your information from demoqa.com (for example, passwords, messages, or credit cards). Learn more
+NET::ERR_CERT_DATE_INVALID
+Then use the following code for your driver declaration (Do not forget to do the necessary class imports):
+ChromeOptions capability = new ChromeOptions();
+capability.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+capability.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS,true);
+WebDriver driver = new ChromeDriver(capability);
