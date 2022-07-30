@@ -1,4 +1,4 @@
-package Day7.Homework;
+package Day7.Project1;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
