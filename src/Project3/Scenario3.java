@@ -27,10 +27,10 @@ import java.util.concurrent.TimeUnit;
 
         driver.manage().window().maximize();
 
-        List<WebElement> addToCarButtonList = driver.findElements(By.xpath("//button[@class='view_product']"));
+        List<WebElement> addToCarButtonList = driver.findElements(By.cssSelector("button[class='view_product']"));
         addToCarButtonList.get(1).click();
 
-        WebElement iframe1 = driver.findElement(By.xpath("//iframe[@class='EJIframeV3 EJOverlayV3']"));
+        WebElement iframe1 = driver.findElement(By.cssSelector("iframe[class='EJIframeV3 EJOverlayV3']"));
         driver.switchTo().frame(iframe1);
 
         WebElement payCreditButton = driver.findElement(By.cssSelector("button[class='Payment-Button CC']"));

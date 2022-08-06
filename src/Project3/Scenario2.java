@@ -25,7 +25,7 @@ import java.util.List;
 
         Thread.sleep(2000);
 
-        List<WebElement> addToCarButtonList = driver.findElements(By.xpath("//button[@class='view_product']"));
+        List<WebElement> addToCarButtonList = driver.findElements(By.cssSelector("button[class='view_product']"));
         addToCarButtonList.get(1).click();
 
         Thread.sleep(2000);

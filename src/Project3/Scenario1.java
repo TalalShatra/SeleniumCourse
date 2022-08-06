@@ -26,7 +26,7 @@ import java.util.List;
 
         Thread.sleep(2000);
 
-        List<WebElement> addToCarButtonList = driver.findElements(By.xpath("//button[@class='view_product']"));
+        List<WebElement> addToCarButtonList = driver.findElements(By.cssSelector("button[class='view_product']"));
         addToCarButtonList.get(1).click();
 
         Thread.sleep(2000);
@@ -50,7 +50,7 @@ import java.util.List;
         removeButton.click();
         Thread.sleep(2000);
 
-        WebElement continueShopping = driver.findElement(By.xpath("//button[@class='Continue-Button Close-Cart']"));
+        WebElement continueShopping = driver.findElement(By.cssSelector("button[class='Continue-Button Close-Cart']"));
         continueShopping.click();
         Thread.sleep(2000);
 
